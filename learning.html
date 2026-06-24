@@ -57,6 +57,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 0 2rem;
+            text-align: center;
         }
         .el-hero-badge {
             display: inline-block;
@@ -90,6 +91,7 @@
             display: flex;
             gap: 1.5rem;
             justify-content: center;
+            flex-wrap: wrap;
         }
         
         /* Learning by Doing */
@@ -394,6 +396,8 @@
         @media (max-width: 768px) {
             .gap-grid, .beyond-grid, .framework-grid, .student-grid, .cycle-diagram, .mun-features-grid, .simulations-grid { grid-template-columns: 1fr !important; }
             .el-hero h1 { font-size: 2.5rem; }
+            .el-hero-btns { flex-direction: column; width: 100%; }
+            .el-hero-btns .btn { width: 100%; box-sizing: border-box; }
             .mun-images { grid-template-columns: 1fr; }
             .mun-img-large { grid-column: 1; }
             .el-cta h2 { font-size: 2.5rem; }
@@ -937,7 +941,7 @@
         }
         @media (max-width: 768px) {
             .debate-hero-grid, .why-debate-grid { grid-template-columns: 1fr; gap: 2rem; }
-            .debate-formats-grid, .core-benefits-grid, .probiz-solutions-grid { grid-template-columns: 1fr; }
+            .debate-formats-grid, .core-benefits-grid, .probiz-solutions-grid { grid-template-columns: 1fr !important; }
         }
     </style>
 
